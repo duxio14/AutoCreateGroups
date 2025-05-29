@@ -112,7 +112,6 @@ async function main() {
 
     for (const group of groups) {
         i++;
-        if(i < 10) continue;
         if(group)
         await createGroupDM(group, i);
         await new Promise(r => setTimeout(r, 1000)); 
